@@ -148,6 +148,9 @@ let total = 0
 let text = ''
 letters.forEach((letter) =>{
     const btn = document.createElement('div')
+    const value = document.createElement('div')
+    value.innerText = letter.value
+    btn.appendChild(value)
     btn.setAttribute('data-value', letter.value)
     btn.classList.add('rounded-full','cursor-pointer','my-2','p-2','btn','text-white','text-2xl','font-semibold','h-16','w-16','flex','items-center','bg-purple-800','justify-center' ,'shadow-lg','border-2','border-purple-700','hover:border-2','hover:border-gray-500','focus:outline-none')
     btn.innerText=letter.letter
